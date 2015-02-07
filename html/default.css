@@ -1,13 +1,13 @@
 
+@charset "utf-8";
+/*안써도 되지만 선언을 권장한다*/
 
 .container{
 	max-width: 960px; 
 	background: silver;
-	margin:  auto;
+	margin: 0 auto;
 	list-style:
 }	
 /*인베디드 스타일은 익스터널보다 우선순위가 높다*/
 /*#id로 #을 붙여줘야한*/
 /*control space 자동완성*/
-
-.header<P{1}
