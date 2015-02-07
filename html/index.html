@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head> 
+<head>  
 	<meta charset="utf-8" /> 
 	<meta name="viewport" content="width=device-width">
+	<!-- 반응형웹 =원소스 투유즈 -->
+	<!-- <meta name="viewport" contetns="width=device-widrh"> -->	
+	<!-- command/를 누르면 주석달수있음-->
+	<title>HTML5</title>
+	<!-- title에 검색엔진에 노출되는 단어를 넣는다 -->
+	<!-- 청와대-공지사항-신문고 이용안내 -->
+	<!-- 신문고 이용안내 -공지사항-청와대 뎁스를 거꾸로 작성하는 것을 추천한다  -->
+	<!-- 화면낭독기를 사용하는 점맹 시각장애인들에게 ux적으로 장애인들의 접근성을 향상시킬수 있 -->
 
-
-	<title>html5</title>
-
+	<!-- 익스터널스타일 css -->
+	<link rel="stylesheet"href="default.css">
+	<!-- css적용하는법 1.인라인 2.인베디드 3. 익스터널 -->
+	<!-- 우선순위 1. 인라인 ;2. 인베디드 ;3.익스터널 순서  -->
+	<!-- <link href="../css/default.css"> -->
+	<!-- 상대경로 ../ 하나 위 폴더로 거슬러 올라간다-->
+	<!-- rel=relatationship ; href=hypertext reference -->
 </head>
-<body> hello world welcome to kor</body>
+<body> 
+	 
+	 <!-- div = division 블럭요소들, 덩어리들을 그룹핑하는 용도 ;의미는 없고 용도만 있다  -->
+	 <!-- id 벨류값을 적을때 숫자나 특수문자로 시작할 수 없다 _,-는 가능 -->
+	 <!-- 한페이지 안에서 벨류값은 유니크해야한다  -->
+	 <div class="container">
+	<a href="#main">메뉴건더뛰기</a>	
+	 	<header class="header">
+	 	  <h1>HTML5</h1> 
+	 	  <nav class="gnb">
+	 	  	<h2>전역메뉴</h2>
+
+	 	  	<!-- 강력하게 권장한다. -하지 않아도된다 -->
+	 	  	<!-- 문법적으로 틀린다 .  -->
+	 	  	<!-- 섹션/ 아티클/ 어사이드 / 네비게이션 태 -->
+	 	  	<ul>
+	 	  		<li>
+	 	  			<a href="#">메뉴 1</a>
+	 	  			<ul>
+	 	  				<li><a href="#">메뉴1-1</a></li>
+	 	  				<li><a href="#">메뉴1-2</a></li>
+	 	  				<li><a href="#">메뉴1-3</a></li>
+	 	  			</ul>
+
+
+	 	  		</li>
+	 	  		<!-- #은 빈값 -->
+	 	  		<!-- 인라인 엘리먼트가 블럭엘리먼트를 자식으로 둘 수 없다 감쌀 수 없다 그러나 a태그만 예외로 허용-->
+	 	  		<li><a href="#">메뉴 2</a>
+	 	  			<ul>
+	 	  				<li><a href="#">메뉴2-1</a></li>
+	 	  				<li><a href="#">메뉴2-2</a></li>
+	 	  				<li><a href="#">메뉴2-3</a></li>
+	 	  			</ul>
+	 	  			</li>
+	 	  		<li><a href="#">메뉴 3</a>
+	 	  			<ul>
+	 	  				<li><a href="#">메뉴3-1</a></li>
+	 	  				<li><a href="#">메뉴3-2</a></li>
+	 	  				<li><a href="#">메뉴3-3</a></li>
+	 	  			</ul>
+	 	  			</li>
+	 	  	</ul>
+	 	  	<!--unordered list : 비순차목록 >사용빈도가 ul가 더 높다 ordered list : 순차목록 -->
+	 	  	<!-- li : list item -->
+	 	  	<!-- ul - li 태그는 같이 존재 이 두 태그사이에는 아무것도 들어올수 없다  -->
+
+
+	 	  </nav>
+	 	  <form class="search">
+	 	  	<input type="seach" required="required">
+	 	  	<!-- required속성하고 밸류값이랑 동일한경우 밸류값 생략가능 	-->
+	 	  	<input type="submit" value="검색">
+	 	  </form>
+	 	  </header>
+	 	<div class="body">
+	 		<main id="main"></main>
+	 		#main
+	 		<!-- id는 자원의 주소가 된다 -->
+	 		<!-- html  body 처럼 페이지에 딱 한번만 사용할 수 있다 -->
+	 		<!-- 반복되는 컨텐츠를 main에 담으면 안된다  -->
+	 		<nav class="lnb">
+	 			<h2>메뉴1</h2>
+	 			<ul>
+	 				<li><a href="#">메뉴1-1</a></li>
+	 				<li><a href="#">메뉴1-2</a></li>
+	 				<li><a href="#">메뉴1-3</a></li>
+	 			</ul>	
+	 		</nav>
+	 		lnb
+	 		<!-- 링크들의 목록 , 주요한 네비게이션 역할  -->
+	 		<aside class=aside>
+	 			<h2>바로가기</h2>
+	 			<ul>
+	 				<li><a href="#">참고링크1</a></li>
+	 				<li><a href="#">참고링크2</a></li>
+	 				<li><a href="#">참고링크3</a></li>
+	 			</ul>	
+
+	 		</aside>
+	 		footers
+	 		<!-- 배너 구글광고 퀵메뉴등등  -->
+	 	</div>
+	 	<footer class="footer"> 
+	 		<p>Copyright &copy; FE.CAMP. All rights reserved.</p>	 
+	 		<!-- 브라우저는 &기호를 만나면 html 엔터티로 해석을 시도한다  형식&~; -->
+	 	</footer>
+	 	<!-- 헤더 푸터엘리먼트는 한페이지안에 여러번 등장할수있다  -->
+	 	
+	 </div>
+	 
+	 <!-- id와 class의 차이 class는 페이지에서 재사용가능 -->
+	 <!-- id값은 url이 될수있다.-->
+	 <!-- naver.com/index.html#container -->
+	 <!-- class를 먼저 고려해주는것이 적절하다  -->
+	 <strong>strong</strong>
+	</body>
 </html>
