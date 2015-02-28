@@ -1,0 +1,34 @@
+
+@charset "utf-8";
+/*안써도 되지만 선언을 권장한다*/
+
+.container{
+	max-width: 960px; 
+	background: silver;
+	margin: 0 auto;
+	list-style:
+}	
+/*인베디드 스타일은 익스터널보다 우선순위가 높다*/
+/*#id로 #을 붙여줘야한*/
+/*control space 자동완성*/
+　
+
+	/*동등한 우선순위 였을때는 아래쓴게 우선한다*/
+
+
+
+main{
+	background: #FFF;
+	box-shadow: 0 0 4px #999;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+	border-radius: 8px;
+	min-height:  300px;
+	
+
+}
+/*left top blur color*/
+/*알파값 선언하는 방법 rgba */
+/* 0.3은 .3으로 단축 */
+/*i7/8브라우저에서는 윗줄만 해석 표준 css3속성을 더써주면 윗코드 해석하고 아랫코드가 윗코드를 오버라이드*/
+/* #을 쓰면 우선순위기 높아진다 */
+/* 오버라이드를 해야되는 상황을 고려하면 선택자 우선순위는 조심히 써야한다 */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css test </title>
+	<style>
+
+	span{ display: block;
+		border: 10px solid #a0a0f0;
+		padding: 10px 20px 30px ;
+		margin: 10px ;
+		/*수직마진중첩현상*/
+	}
+	/*스팬을 블럭으로 하면 한줄씩 차지한다 */
+
+
+	</style>
+</head>
+<body>
+	<span style="margin-bottom: 20px;">span</span>
+	<!-- 수직마진이 중첩될때 절대값이 큰마진만 적용되고 적은값은 버려진다 -->
+	<span style="margin-bottom: -40px;">span</span>
+	<!-- 마진은 -값이 들어올수있고 -값고 +값이 겹치게되면 두 값을 계산하면된다 -->
+	<!-- 둘다 - 값일 경우 음수값 마진이 서로만나도 큰마진만 적용되고 적은값은 버려진 -->
+	<!-- 한행에 계속 배치가 된다 인라인 엘리먼트의 속성  -->
+	<div style="border:10px solid #00f">....</div>	
+
+</body>
+</html>
